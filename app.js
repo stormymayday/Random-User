@@ -1,1 +1,1 @@
-console.log(`hello`);
+const url = 'https://randomuser.me/api/';
