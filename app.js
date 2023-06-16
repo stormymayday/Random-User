@@ -4,4 +4,5 @@ const url = 'https://randomuser.me/api/';
 
 // Selections
 const img = getElement('.user-img');
-console.log(img);
+const btn = getElement('.btn');
+console.log(btn);
