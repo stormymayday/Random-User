@@ -9,9 +9,19 @@ const value = getElement('.user-value');
 const btn = getElement('.btn');
 const btns = [...document.querySelectorAll('.icon')];
 
+const getUser = async () => {
+
+    const response = await fetch(url);
+
+    // const data = await response.json();
+
+};
+
 const showUser = () => {
 
-    console.log(`Hello World`);
+    // get user from api
+
+    // display user
 
 };
 
