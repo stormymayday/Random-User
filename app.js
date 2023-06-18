@@ -15,4 +15,4 @@ const showUser = () => {
 
 };
 
-window.addEventListener(`DOMContentLoaded`, showUser());
+window.addEventListener(`DOMContentLoaded`, showUser);
