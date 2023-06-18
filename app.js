@@ -14,3 +14,5 @@ const showUser = () => {
     console.log(`Hello World`);
 
 };
+
+window.addEventListener(`DOMContentLoaded`, showUser());
