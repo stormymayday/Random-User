@@ -8,4 +8,9 @@ const title = getElement('.user-title');
 const value = getElement('.user-value');
 const btn = getElement('.btn');
 const btns = [...document.querySelectorAll('.icon')];
-console.log(btns);
+
+const showUser = () => {
+
+    console.log(`Hello World`);
+
+};
