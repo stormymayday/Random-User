@@ -16,3 +16,4 @@ const showUser = () => {
 };
 
 window.addEventListener(`DOMContentLoaded`, showUser);
+btn.addEventListener(`click`, showUser);
