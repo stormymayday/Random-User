@@ -13,6 +13,8 @@ const getUser = async () => {
 
     const response = await fetch(url);
 
+    console.log(response);
+
     // const data = await response.json();
 
 };
@@ -20,6 +22,7 @@ const getUser = async () => {
 const showUser = () => {
 
     // get user from api
+    getUser();
 
     // display user
 
