@@ -25,6 +25,8 @@ const getUser = async () => {
     const { first: firstName, last: lastName } = person.name;
     const { age } = person.dob;
     console.log(age);
+    const { number: streetNumber, name: streetName } = person.location.street;
+    console.log(streetNumber, streetName);
 
 };
 
