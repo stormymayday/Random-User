@@ -17,6 +17,10 @@ const getUser = async () => {
 
     console.log(data);
 
+    // Destructuring
+    const person = data.results[0];
+    console.log(person);
+
 };
 
 const showUser = () => {
