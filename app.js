@@ -20,7 +20,8 @@ const getUser = async () => {
     console.log(person);
 
     const { phone, email } = person;
-    console.log(phone, email);
+    const { large: image } = person.picture;
+    console.log(image);
 
 };
 
