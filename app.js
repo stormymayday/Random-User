@@ -22,7 +22,8 @@ const getUser = async () => {
     const { phone, email } = person;
     const { large: image } = person.picture;
     const { password } = person.login;
-    console.log(password);
+    const { first: firstName, last: lastName } = person.name;
+    console.log(firstName, lastName);
 
 };
 
