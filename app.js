@@ -15,11 +15,12 @@ const getUser = async () => {
 
     const data = await response.json();
 
-    console.log(data);
-
-    // Destructuring
+    // Extracing person object from data.results array
     const person = data.results[0];
     console.log(person);
+
+    const { phone, email } = person;
+    console.log(phone, email);
 
 };
 
