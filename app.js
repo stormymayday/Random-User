@@ -17,16 +17,14 @@ const getUser = async () => {
 
     // Extracing person object from data.results array
     const person = data.results[0];
-    console.log(person);
 
+    // Destructuring
     const { phone, email } = person;
     const { large: image } = person.picture;
     const { password } = person.login;
     const { first: firstName, last: lastName } = person.name;
     const { age } = person.dob;
-    console.log(age);
     const { number: streetNumber, name: streetName } = person.location.street;
-    console.log(streetNumber, streetName);
 
 };
 
