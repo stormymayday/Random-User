@@ -27,12 +27,12 @@ const getUser = async () => {
     const { number: streetNumber, name: streetName } = person.location.street;
 
     return {
-        phone: phone,
-        email: email,
-        image: image,
-        password: password,
+        phone,
+        email,
+        image,
+        password,
         name: `${firstName} ${lastName}`,
-        age: age,
+        age,
         street: `${streetNumber} ${streetName}`,
     };
 
