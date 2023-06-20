@@ -38,14 +38,12 @@ const getUser = async () => {
 
 };
 
-getUser().then(data => {
-    console.log(data);
-});
-
 const showUser = () => {
 
     // get user from api
-    getUser();
+    getUser().then(data => {
+        console.log(data);
+    });
 
     // display user
 
