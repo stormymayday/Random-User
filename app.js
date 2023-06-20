@@ -33,8 +33,7 @@ const getUser = async () => {
         password: password,
         name: `${firstName} ${lastName}`,
         age: age,
-        streetNumber: streetNumber,
-        streetName: streetName,
+        street: `${streetNumber} ${streetName}`,
     };
 
 };
