@@ -26,7 +26,23 @@ const getUser = async () => {
     const { age } = person.dob;
     const { number: streetNumber, name: streetName } = person.location.street;
 
+    return {
+        phone: phone,
+        email: email,
+        image: image,
+        password: password,
+        firstName: firstName,
+        lastName: lastName,
+        age: age,
+        streetNumber: streetNumber,
+        streetName: streetName,
+    };
+
 };
+
+getUser().then(data => {
+    console.log(data);
+});
 
 const showUser = () => {
 
