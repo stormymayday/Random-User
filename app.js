@@ -8,6 +8,12 @@ const value = getElement('.user-value');
 const btn = getElement('.btn');
 const btns = [...document.querySelectorAll('.icon')];
 
+const displayUser = (person) => {
+
+    img.src = person.image;
+
+};
+
 const showUser = async () => {
 
     // get user from api
@@ -17,7 +23,8 @@ const showUser = async () => {
     const person = await getUser();
     console.log(person);
 
-    // display user
+    // Display User
+    displayUser(person);
 
 };
 
