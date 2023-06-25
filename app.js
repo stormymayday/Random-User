@@ -15,6 +15,13 @@ const displayUser = (person) => {
     value.textContent = person.name;
     title.textContent = `My name is`;
 
+    // Removing the class of '.active' from all the buttons
+    btns.forEach((btn) => {
+
+        btn.classList.remove('active');
+
+    });
+
     // Adding class '.active' to the first button
     btns[0].classList.add('active');
 
