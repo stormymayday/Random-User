@@ -28,6 +28,9 @@ const displayUser = (person) => {
         // Adding event listener
         btn.addEventListener('click', () => {
 
+            // Accessing person object properties that correspond to the data labels
+            console.log(person[label]);
+
         });
 
     });
