@@ -13,6 +13,7 @@ const displayUser = (person) => {
     img.src = person.image;
     value.textContent = person.name;
     title.textContent = `My name is`;
+    btns[0].classList.add('active');
 
 };
 
