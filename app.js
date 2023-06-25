@@ -37,6 +37,9 @@ const displayUser = (person) => {
             // Setting the value
             value.textContent = person[label];
 
+            // Adding the class of '.active'
+            btn.classList.add('active');
+
         });
 
     });
