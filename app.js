@@ -10,7 +10,7 @@ const btns = [...document.querySelectorAll('.icon')];
 
 const displayUser = (person) => {
 
-    // Assigning the image, name, title
+    // Assigning the image, value, title
     img.src = person.image;
     value.textContent = person.name;
     title.textContent = `My name is`;
@@ -31,7 +31,11 @@ const displayUser = (person) => {
             // Accessing person object properties that correspond to the data labels
             console.log(person[label]);
 
+            // Setting the title
             title.textContent = `My ${label} is`;
+
+            // Setting the value
+            value.textContent = person[label];
 
         });
 
