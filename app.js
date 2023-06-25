@@ -15,6 +15,10 @@ const displayUser = (person) => {
     title.textContent = `My name is`;
     btns[0].classList.add('active');
 
+    btns.forEach((btn) => {
+        console.log(btn);
+    });
+
 };
 
 const showUser = async () => {
@@ -23,6 +27,7 @@ const showUser = async () => {
     // getUser().then(data => {
     //     console.log(data);
     // });
+
     const person = await getUser();
     console.log(person);
 
