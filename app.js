@@ -31,6 +31,8 @@ const displayUser = (person) => {
             // Accessing person object properties that correspond to the data labels
             console.log(person[label]);
 
+            title.textContent = `My ${label} is`;
+
         });
 
     });
