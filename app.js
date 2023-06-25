@@ -10,13 +10,21 @@ const btns = [...document.querySelectorAll('.icon')];
 
 const displayUser = (person) => {
 
+    // Assigning the image, name, title
     img.src = person.image;
     value.textContent = person.name;
     title.textContent = `My name is`;
+
+    // Adding class '.active' to the first button
     btns[0].classList.add('active');
 
+    // Iterating over the buttons
     btns.forEach((btn) => {
-        console.log(btn);
+
+        // Getting the data label value
+        const label = btn.dataset.label;
+        console.log(label);
+
     });
 
 };
