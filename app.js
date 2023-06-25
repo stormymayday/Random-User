@@ -37,7 +37,14 @@ const displayUser = (person) => {
             // Setting the value
             value.textContent = person[label];
 
-            // Adding the class of '.active'
+            // Removing the class of '.active' from all the buttons
+            btns.forEach((btn) => {
+
+                btn.classList.remove('active');
+
+            });
+
+            // Adding the class of '.active' to the current button
             btn.classList.add('active');
 
         });
