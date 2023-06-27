@@ -16,7 +16,6 @@ const showUser = async () => {
     // });
 
     const person = await getUser();
-    console.log(person);
 
     // Display User
     displayUser(person);
