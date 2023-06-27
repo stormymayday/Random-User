@@ -28,7 +28,6 @@ const displayUser = (person) => {
 
         // Getting the data label value
         const label = btn.dataset.label;
-        console.log(label);
 
         // Adding event listener
         btn.addEventListener('click', () => {
