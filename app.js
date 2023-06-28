@@ -3,7 +3,6 @@ import getUser from "./utils/fetchUser.js";
 import displayUser from "./utils/displayUser.js";
 
 const btn = getElement('.btn');
-const btns = [...document.querySelectorAll('.icon')];
 
 const showUser = async () => {
 
