@@ -2,7 +2,6 @@ import getElement from "./utils/getElement.js";
 import getUser from "./utils/fetchUser.js";
 import displayUser from "./utils/displayUser.js";
 
-const title = getElement('.user-title');
 const value = getElement('.user-value');
 const btn = getElement('.btn');
 const btns = [...document.querySelectorAll('.icon')];
