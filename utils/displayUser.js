@@ -43,6 +43,7 @@ const displayUser = (person) => {
             value.textContent = person[label];
 
             // Removing the class of '.active' from all the buttons
+            removeActive(btns);
             // btns.forEach((btn) => {
 
             //     btn.classList.remove('active');
