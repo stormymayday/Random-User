@@ -14,11 +14,12 @@ const displayUser = (person) => {
     title.textContent = `My name is`;
 
     // Removing the class of '.active' from all the buttons
-    btns.forEach((btn) => {
+    removeActive(btns);
+    // btns.forEach((btn) => {
 
-        btn.classList.remove('active');
+    //     btn.classList.remove('active');
 
-    });
+    // });
 
     // Adding class '.active' to the first button
     btns[0].classList.add('active');
@@ -42,11 +43,11 @@ const displayUser = (person) => {
             value.textContent = person[label];
 
             // Removing the class of '.active' from all the buttons
-            btns.forEach((btn) => {
+            // btns.forEach((btn) => {
 
-                btn.classList.remove('active');
+            //     btn.classList.remove('active');
 
-            });
+            // });
 
             // Adding the class of '.active' to the current button
             btn.classList.add('active');
@@ -56,5 +57,14 @@ const displayUser = (person) => {
     });
 
 };
+
+function removeActive(items) {
+
+    items.forEach((item) => {
+
+        item.classList.remove('active');
+
+    });
+}
 
 export default displayUser;
