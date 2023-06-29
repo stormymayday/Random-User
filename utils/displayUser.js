@@ -15,11 +15,6 @@ const displayUser = (person) => {
 
     // Removing the class of '.active' from all the buttons
     removeActive(btns);
-    // btns.forEach((btn) => {
-
-    //     btn.classList.remove('active');
-
-    // });
 
     // Adding class '.active' to the first button
     btns[0].classList.add('active');
@@ -33,9 +28,6 @@ const displayUser = (person) => {
         // Adding event listener
         btn.addEventListener('click', () => {
 
-            // Accessing person object properties that correspond to the data labels
-            console.log(person[label]);
-
             // Setting the title
             title.textContent = `My ${label} is`;
 
@@ -44,11 +36,6 @@ const displayUser = (person) => {
 
             // Removing the class of '.active' from all the buttons
             removeActive(btns);
-            // btns.forEach((btn) => {
-
-            //     btn.classList.remove('active');
-
-            // });
 
             // Adding the class of '.active' to the current button
             btn.classList.add('active');
