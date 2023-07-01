@@ -1,4 +1,5 @@
 import getElement from "./getElement.js";
+import removeActive from "./removeActive.js";
 
 // Element Selections
 const img = getElement('.user-img');
@@ -45,14 +46,5 @@ const displayUser = (person) => {
     });
 
 };
-
-function removeActive(items) {
-
-    items.forEach((item) => {
-
-        item.classList.remove('active');
-
-    });
-}
 
 export default displayUser;
